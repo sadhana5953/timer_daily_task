@@ -9,7 +9,7 @@ Asynchronous programming is a programming paradigm that allows tasks or operatio
 # 2. What is Future Class ?
 In Dart, a Future represents a value that may not be available yet. It encapsulates an asynchronous operation and provides a way to handle the result or error when it becomes available. The Future can be in one of three states: uncompleted, completed with a value, or completed with an error with talk about in detail in other blog.
 
-# 3. What is Duration class & Future.delayed() constructor with Example ?
+# 3. What is Duration class & Future.delayed() constructor with Example?
 Duration Class :   
 The Duration class represents an interval of time in seconds or nanoseconds and is most suited for handling shorter amounts of time, in cases that require more precision.
 
