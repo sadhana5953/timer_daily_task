@@ -1,19 +1,18 @@
 import 'dart:async';
 import 'dart:math';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
-
-class digitalClock extends StatefulWidget {
-  const digitalClock({super.key});
+import 'package:timer_daily_task/clockApp/digital%20clock/clock.dart';
+class analogue extends StatefulWidget {
+  const analogue({super.key});
 
   @override
-  State<digitalClock> createState() => _digitalClockState();
+  State<analogue> createState() => _analogueState();
 }
 
-class _digitalClockState extends State<digitalClock> {
+class _analogueState extends State<analogue> {
   @override
   Widget build(BuildContext context) {
+
     Timer.periodic(Duration(seconds: 1), (timer) {
       setState(() {
         dateTime = DateTime.now();
@@ -81,7 +80,8 @@ class _digitalClockState extends State<digitalClock> {
         }
       });
     });
-    return Scaffold(
+
+    return  Scaffold(
       body: Container(
         height: double.infinity,
         width: double.infinity,
@@ -94,24 +94,24 @@ class _digitalClockState extends State<digitalClock> {
           children: [
             RichText(
                 text: TextSpan(children: [
-              TextSpan(
-                  text: '\n\n${dateTime.hour % 12}:${dateTime.minute}',
-                  style: TextStyle(fontWeight: FontWeight.w500, fontSize: 50)),
-              TextSpan(
-                  text: '${(dateTime.hour > 12 ? (' pm\n') : (' am\n'))}',
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25)),
-              TextSpan(
-                  text: '   ${day}, ${month} ${dateTime.day}',
-                  style: TextStyle(fontSize: 23, fontWeight: FontWeight.w500)),
-            ])),
+                  TextSpan(
+                      text: '\n\n${dateTime.hour % 12}:${dateTime.minute}',
+                      style: TextStyle(fontWeight: FontWeight.w500, fontSize: 50)),
+                  TextSpan(
+                      text: '${(dateTime.hour > 12 ? (' pm\n') : (' am\n'))}',
+                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25)),
+                  TextSpan(
+                      text: '   ${day}, ${month} ${dateTime.day}',
+                      style: TextStyle(fontSize: 23, fontWeight: FontWeight.w500)),
+                ])),
             Container(
               height: 200,
               width: 200,
               margin: EdgeInsets.only(top: 40),
               padding: EdgeInsets.all(5),
               decoration: BoxDecoration(
-                border: Border.all(color: Colors.white,width: 5),
-                shape: BoxShape.circle
+                  border: Border.all(color: Colors.white,width: 5),
+                  shape: BoxShape.circle
               ),
               child: Container(
                 height: 180,
@@ -159,7 +159,7 @@ class _digitalClockState extends State<digitalClock> {
                     Transform.rotate(
                       angle: (dateTime.hour % 12 + dateTime.minute / 60) * 30 * (pi / 180),
                       child: VerticalDivider(
-                        color: Colors.black,
+                        color: Colors.white,
                         thickness: 4,
                         endIndent: 65,
                         indent: 40,
@@ -174,6 +174,24 @@ class _digitalClockState extends State<digitalClock> {
                   ],
                 ),
               ),
+            ),
+            GestureDetector(
+              onTap: (){
+                Navigator.of(context).pushNamed('/strapWatch');
+              },
+              child: Container(
+                height: 50,
+                width: 200,
+                margin: EdgeInsets.only(top: 250),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(25),
+                  border:  Border.all(color:Colors.white,width: 2),
+                  gradient: LinearGradient(colors: [Colors.black12,
+                    Color(0xFF33373A),],),
+                ),
+                alignment: Alignment.center,
+                child: Text("Strap Watch",style: TextStyle(fontSize: 22,fontWeight: FontWeight.w500,color: Colors.white),),
+              ),
             )
           ],
         ),
@@ -181,7 +199,3 @@ class _digitalClockState extends State<digitalClock> {
     );
   }
 }
-
-DateTime dateTime = DateTime.now();
-String day = '';
-String month = '';

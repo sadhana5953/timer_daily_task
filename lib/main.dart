@@ -4,7 +4,9 @@
 // TextButton
 
 import 'package:flutter/material.dart';
-import 'package:timer_daily_task/clockApp/digital%20clock/clock.dart';
+import 'package:timer_daily_task/clockApp/clock%20app/analog%20clock/analog%20watch.dart';
+import 'package:timer_daily_task/clockApp/clock%20app/clock/strap%20watch.dart';
+import 'package:timer_daily_task/clockApp/clock%20app/digital%20clock/digital%20watch.dart';
 import 'package:timer_daily_task/flutter%20button/buttons.dart';
 
 void main() {
@@ -21,7 +23,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       routes: {
-        '/': (context) => digitalClock(),
+        '/': (context) => strapWatch(),
+        '/analogue':(context) => analogue(),
+        '/strapWatch':(context) => strapWatch(),
         '/home':(context) => homePage(),
       },
     );

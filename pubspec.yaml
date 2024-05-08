@@ -65,8 +65,8 @@ flutter:
   #   - images/a_dot_ham.jpeg
   assets:
     - assets/image/clock.jpeg
-    - assets/image/digitalClock.jpeg
     - assets/image/Clock.webp
+    - assets/image/clock3.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
