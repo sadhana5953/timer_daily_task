@@ -93,7 +93,7 @@ void main()
 ````
 # Analogue Clock
 <img src="https://github.com/sadhana5953/timer_daily_task/assets/148869257/8a015090-0f9d-41d2-9b57-0dd520c7f6f3" height=22% width=35%>
-<video src="https://github.com/sadhana5953/timer_daily_task/assets/148869257/f4c6a25e-73b4-4bef-bed6-f70090c11d28" height=22% width=35%
+<video src="https://github.com/sadhana5953/timer_daily_task/assets/148869257/f4c6a25e-73b4-4bef-bed6-f70090c11d28" height=22% width=35%>
 
 
 
