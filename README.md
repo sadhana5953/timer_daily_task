@@ -93,9 +93,6 @@ void main()
 }
 }
 ````
-# Analogue Clock
-<img src="https://github.com/sadhana5953/timer_daily_task/assets/148869257/8a015090-0f9d-41d2-9b57-0dd520c7f6f3" height=22% width=35%>
-<video src="https://github.com/sadhana5953/timer_daily_task/assets/148869257/f4c6a25e-73b4-4bef-bed6-f70090c11d28" height=22% width=35%>
 
 # Timer App
 <img src="https://github.com/sadhana5953/timer_daily_task/assets/148869257/c2a71e87-dbd9-4b5d-b36a-715fa0c328a2" height=22% width=35%>
@@ -103,4 +100,8 @@ void main()
 <img src="https://github.com/sadhana5953/timer_daily_task/assets/148869257/dbb8693c-103a-4159-bad1-354c82a6e441" height=22% width=35%>
 <video src="https://github.com/sadhana5953/timer_daily_task/assets/148869257/7f90d65e-9bac-4c63-9a67-9a255686a1be" height=22% width=35%>
 
+
+# Analogue Clock
+<img src="https://github.com/sadhana5953/timer_daily_task/assets/148869257/8a015090-0f9d-41d2-9b57-0dd520c7f6f3" height=22% width=35%>
+<video src="https://github.com/sadhana5953/timer_daily_task/assets/148869257/f4c6a25e-73b4-4bef-bed6-f70090c11d28" height=22% width=35%>
 
